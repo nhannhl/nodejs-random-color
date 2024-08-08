@@ -14,6 +14,6 @@ jobs:
         uses: zulhfreelancer/aws-codepipeline-action@v1.1.0
         with:
           aws-region: "ap-southeast-1"
-          aws-access-key: ${{ secrets.AWS_PIPELINE_ACCESS_KEY }}
-          aws-secret-key: ${{ secrets.AWS_PIPELINE_SECRET_KEY }}
+          aws-access-key: ${{ secrets.ACCESS_KEY_ID }}
+          aws-secret-key: ${{ secrets.ACCESS_KEY_SECRETS }}
           pipeline-name: "ecr-pipeline"
